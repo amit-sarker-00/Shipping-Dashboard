@@ -1,11 +1,12 @@
 import React from "react";
-import Test from "../Test/Test";
-import Test2 from "../Test/Test2";
+import Date from "../Date/Date";
+import History from "../History/History";
 
 const Home = () => {
   return (
     <div>
-      <Test></Test>
+      <Date></Date>
+      <History></History>
     </div>
   );
 };
