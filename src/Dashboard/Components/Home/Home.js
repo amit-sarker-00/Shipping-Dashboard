@@ -1,10 +1,10 @@
 import React from "react";
-
+import Date from "../Date/Date";
 
 const Home = () => {
   return (
     <div>
-      hello
+      <Date></Date>
     </div>
   );
 };
