@@ -10,17 +10,16 @@ const Navbar = () => {
 
   return (
     <div className="flex ">
-      <div className="">
+      <div className="relative ">
         <div
-          className={`${open ? "w-80" : "w-20"} duration-300 h-screen
-        bg-blue-900 relative `}
+          className={`${open ? "w-80" : "w-20"} duration-300 h-full
+        bg-blue-900 `}
         >
           {/* logo and name  */}
           <div>
             <BiArrowBack
-              className={`absolute cursor-pointer -right-3 top-9 border-2 border-yellow-500 text-3xl text-black bg-yellow-500 rounded-full p-1 ${
-                !open && "rotate-180"
-              } `}
+              className={`absolute cursor-pointer -right-3 top-9 border-2 border-yellow-500 text-3xl text-black bg-yellow-500 rounded-full p-1 ${!open && "rotate-180"
+                } `}
               onClick={() => setOpen(!open)}
             />
           </div>
@@ -29,9 +28,8 @@ const Navbar = () => {
               className={`cursor-pointer duration-500 text-black text-3xl `}
             />
             <h1
-              className={`text-black  font-medium text-sm duration-300 ${
-                !open && "hidden"
-              }`}
+              className={`text-black  font-medium text-sm duration-300 ${!open && "hidden"
+                }`}
             >
               Dev E-commerce
             </h1>
@@ -40,15 +38,17 @@ const Navbar = () => {
             </p>
           </div>
           {/* all menu  */}
-          <DashboardMenu open={open} />
+          <div>
+            <DashboardMenu open={open} />
+          </div>
         </div>
       </div>
-      <div className=" text-2xl font-semibold  h-screen w-full ">
+      <div className=" text-2xl font-semibold  h-screen w-full  ">
         {/* all outlet  */}
         <div className="w-full ">
           <DashBoardTopMenu />
         </div>
-        <div className="p-7">
+        <div className="p-7 h-[1600px] ">
           <Outlet></Outlet>
         </div>
       </div>
