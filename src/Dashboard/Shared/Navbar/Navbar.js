@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BiArrowBack, BiMeteor } from "react-icons/bi";
-import { Link, Outlet } from "react-router-dom";
-import cart from "../../assart/Chart.png";
+import { Outlet } from "react-router-dom";
 import DashboardMenu from "../../DashboardMenu/DashboardMenu";
 import DashBoardTopMenu from "../../DashBordTopMenu/DashBoardTopMenu";
 
@@ -12,8 +11,10 @@ const Navbar = () => {
     <div className="flex ">
       <div className="relative ">
         <div
-          className={`${open ? "w-80" : "w-20"} duration-300 h-full
-        bg-blue-900 `}
+          className={` sticky top-0 ${
+            open ? "w-80 " : "w-20 "
+          } duration-300 h-screen
+        bg-blue-900 relative `}
         >
           {/* logo and name  */}
           <div>
@@ -43,12 +44,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className=" text-2xl font-semibold  h-screen w-full  ">
-        {/* all outlet  */}
-        <div className="w-full ">
+      <div className=" text-2xl font-semibold  w-full ">
+        <div className="  ">
           <DashBoardTopMenu />
         </div>
-        <div className="p-7 h-[1600px] ">
+        <div className="p-7 w-full">
           <Outlet></Outlet>
         </div>
       </div>
