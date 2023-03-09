@@ -20,7 +20,7 @@
     "customerName": "Amit",
     "location": "Barishal,Barishal",
     "date": "05/02/2023",
-    "status": "canceled",
+    "status": "cancelled",
     "amount": 399
   },
   {
@@ -28,7 +28,7 @@
     "customerName": "John",
     "location": "Faridpur,Dhaka",
     "date": "05/02/2023",
-    "status": "Hold",
+    "status": "hold",
     "amount": 999
   },
   {
@@ -49,10 +49,10 @@
   },
   {
     "_id": 12824,
-    "customerName": "amr kisu valo lage na",
+    "customerName": "amr mon valo nei",
     "location": "Madaripur,Dhaka",
     "date": "05/02/2023",
-    "status": "canceled",
+    "status": "cancelled",
     "amount": 649
   },
   {
@@ -60,7 +60,7 @@
     "customerName": "Iron Man",
     "location": "Madaripur,Dhaka",
     "date": "05/02/2023",
-    "status": "Hold",
+    "status": "hold",
     "amount": 399
   },
   {

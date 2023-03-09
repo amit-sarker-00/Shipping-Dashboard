@@ -8,6 +8,7 @@ const RecentOrders = () => {
       .then((data) => setRecentOrders(data))
       .catch((err) => console.error(err));
   }, []);
+
   return (
     <div className="container  my-6  text-gray-100">
       <h1 className="font-semibold text-[#5e6164]">Recent Orders</h1>
@@ -32,7 +33,7 @@ const RecentOrders = () => {
             </tr>
           </thead>
           <tbody>
-            {recentOrders?.map((orders) => (
+            {recentOrders?.slice(-10).map((orders) => (
               <tr
                 key={orders?._id}
                 className="border-b border-opacity-20 border-gray-700  text-[#5e6164]"
@@ -53,10 +54,29 @@ const RecentOrders = () => {
                 <td className="p-3 text-right">
                   <p>{orders?.amount} BDT</p>
                 </td>
-                <td className="p-3  text-right">
-                  <span className="px-3 py-1 font-semibold rounded-md bg-violet-400 dark:text-gray-900">
+                <td className="p-3  text-center">
+                  <div
+                    className={`p-1 ${
+                      orders?.status === "pending"
+                        ? "bg-blue-500 text-white"
+                        : orders?.status === "confirmed"
+                        ? "bg-green-500"
+                        : orders?.status === "cancelled"
+                        ? "bg-red-300"
+                        : "bg-amber-300"
+                    }`}
+                  >
+                    {orders?.status === "pending"
+                      ? "Pending"
+                      : orders?.status === "confirmed"
+                      ? "Confirmed"
+                      : orders?.status === "cancelled"
+                      ? "Cancelled"
+                      : "Hold"}
+                  </div>
+                  {/* <span className="px-3 py-1 font-semibold rounded-md bg-violet-400 dark:text-gray-900">
                     <span>{orders?.status}</span>
-                  </span>
+                  </span> */}
                 </td>
               </tr>
             ))}
