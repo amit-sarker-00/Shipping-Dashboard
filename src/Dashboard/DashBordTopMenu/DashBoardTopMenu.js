@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const DashBoardTopMenu = () => {
   return (
-    <div>
+    <div className="">
       <div className="bg-sky-200 w-full p-1 flex items-center justify-between ">
         <div className="lg:flex hidden items-center bg-gray-100 w-96">
           <BiSearch className="p-0.5 m-2" />
           <input type="text" className="w-full outline-none p-1 text-sm" />
         </div>
-        <div className="pr-5 pt-1 flex items-center gap-5">
+        <div className="pr-5 pt-1 flex items-center gap-5 ">
           <div className=" relative">
             <BiBellMinus className="text-xl" />
             <p className="absolute -top-3 pt-0.5 px-2 rounded-full -right-3 text-xs bg-yellow-500">
