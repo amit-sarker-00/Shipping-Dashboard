@@ -2,6 +2,7 @@ import React from "react";
 import Date from "../Date/Date";
 import History from "../History/History";
 import RecentOrders from "../RecentOrders/RecentOrders";
+import RecentReviews from "../RecentReviews/RecentReviews";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Date></Date>
       <History></History>
       <RecentOrders></RecentOrders>
+      <RecentReviews></RecentReviews>
     </div>
   );
 };

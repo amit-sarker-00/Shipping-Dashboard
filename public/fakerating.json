@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "picture": "https://i.ibb.co/4g7ZxRT/Can-Am-Origin-electric-dual-sport-motorcycle-1.jpg",
+    "productName": "Electric bike",
+    "reviewerName": "rakib",
+    "rating": 5.0
+  },
+  {
+    "_id": 2,
+    "picture": "https://i.ibb.co/bF12vms/adventure-bikes-in-india.jpg",
+    "productName": "Electric bike",
+    "reviewerName": "sakib",
+    "rating": 2.0
+  },
+  {
+    "_id": 3,
+    "picture": "https://i.ibb.co/CwRFgNX/758c7372-df23-4988-b1df-8d9a51fe7886.png",
+    "productName": "Electric bike",
+    "reviewerName": "abdul",
+    "rating": 4.0
+  },
+  {
+    "_id": 4,
+    "picture": "https://i.ibb.co/rMc8Y73/Top-10-Ten-Touring-Bikes-2021-06a.webp",
+    "productName": "Electric bike",
+    "reviewerName": "rahim",
+    "rating": 3.5
+  },
+
+  {
+    "_id": 5,
+    "picture": "https://i.ibb.co/4g7ZxRT/Can-Am-Origin-electric-dual-sport-motorcycle-1.jpg",
+    "productName": "Electric bike",
+    "reviewerName": "amit",
+    "rating": 4.5
+  }
+]
