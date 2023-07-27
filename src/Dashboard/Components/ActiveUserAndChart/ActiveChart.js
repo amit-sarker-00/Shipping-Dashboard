@@ -62,7 +62,7 @@ const ActiveChart = () => {
 
 
     return (
-        <div className='w-full lg:w-[1000px]'>
+        <div className='w-full lg:w-[43vw]'>
             <p className='text-xs py-1 text-gray-600'>Income Statistics</p>
             <div>
 
